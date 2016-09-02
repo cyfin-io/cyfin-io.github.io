@@ -22,7 +22,7 @@
       <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
     </noscript>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/rainbow.css" />
+    
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
   </head>
@@ -47,11 +47,12 @@
     <nav id="nav">
       <ul>
         {% assign current = page.url | downcase | split: '/' %}
-        <li {% if current[1] == '' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home {{current[1]}}</a></li>
+        <li {% if current[1] == '' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
         <li {% if current[1] == 'instructions' %}class="current"{% endif %}><a href="{{ site.baseurl }}/instructions">Getting Started</a></li>
         <li {% if current[1] == 'faq' %}class="current"{% endif %}><a href="{{ site.baseurl }}/faq">FAQ</a></li>
         <li>
-        <li {% if current[1] == 'issuance' %}class="current"{% endif %}><a href="{{ site.baseurl }}/issuance">Issuance</a></li>
+        <li {% if current[1] == 'issuance' %}class="current"{% endif %}><a href="{{ site.baseurl }}/issuance">Issuance/Metering</a></li>
+        <li {% if current[1] == 'claiming' %}class="current"{% endif %}><a href="{{ site.baseurl }}/claiming">Claiming/Spending</a></li>
         <li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
       </ul>
     </nav>
