@@ -1,60 +1,59 @@
 <!DOCTYPE HTML>
 <!--
-	Arcana by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Arcana by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>CyFin</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="cyfin crypto-conditions blockchain IoT payment" />
-		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
-		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
-		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
-		</noscript>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/rainbow.css" />
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
-	</head>
-	<body>
-	<script>
-		$(document).ready(function() {
-		hljs.configure({
-		  tabReplace: '    ', // 4 spaces
-		  classPrefix: ''     // don't append class prefix
-		                      // … other options aren't changed
-		})
-		hljs.initHighlighting();
-		});
-	</script>
-		<!-- Header -->
-			<div id="header">
-						
-				<!-- Logo -->
-					<h1><a href="{{ site.baseurl }}/" id="logo">CyFin:  <em>Banking for the Internet of Things</em></a></h1>
-				
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if current[1] == '/' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
-							<li {% if current[1] == 'instructions' %}class="current"{% endif %}><a href="{{ site.baseurl }}/instructions">Getting Started</a></li>
-							<li {% if current[1] == 'faq' %}class="current"{% endif %}><a href="{{ site.baseurl }}/faq">FAQ</a></li>
-							<li>
-							<li {% if current[1] == 'issuance' %}class="current"{% endif %}><a href="{{ site.baseurl }}/issuance">Issuance</a></li>
-							<li {% if current[1] == 'withdrawal.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/withdrawal.html">Withdrawal</a></li>
-							<li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
-						</ul>
-					</nav>
+  <head>
+    <title>CyFin</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="cyfin crypto-conditions blockchain IoT payment" />
+    <!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+    </noscript>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/rainbow.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+  </head>
+  <body>
+  <script>
+    $(document).ready(function() {
+    hljs.configure({
+      tabReplace: '    ', // 4 spaces
+      classPrefix: ''     // don't append class prefix
+                          // … other options aren't changed
+    })
+    hljs.initHighlighting();
+    });
+  </script>
+  <!-- Header -->
+  <div id="header">
+        
+    <!-- Logo -->
+    <h1><a href="{{ site.baseurl }}/" id="logo">CyFin:  <em>Banking for the Internet of Things</em></a></h1>
+    
+    <!-- Nav -->
+    <nav id="nav">
+      <ul>
+        {% assign current = page.url | downcase | split: '/' %}
+        <li {% if current[1] == '' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home {{current[1]}}</a></li>
+        <li {% if current[1] == 'instructions' %}class="current"{% endif %}><a href="{{ site.baseurl }}/instructions">Getting Started</a></li>
+        <li {% if current[1] == 'faq' %}class="current"{% endif %}><a href="{{ site.baseurl }}/faq">FAQ</a></li>
+        <li>
+        <li {% if current[1] == 'issuance' %}class="current"{% endif %}><a href="{{ site.baseurl }}/issuance">Issuance</a></li>
+        <li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
+      </ul>
+    </nav>
 
-			</div>
+  </div>

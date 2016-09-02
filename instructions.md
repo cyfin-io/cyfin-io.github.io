@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 layout: default
+permalink: /instructions/
 ---
     
 <section class="wrapper style1">

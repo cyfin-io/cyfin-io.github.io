@@ -1,14 +1,14 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: FAQ
+permalink: /faq/
 ---
 <section class="wrapper style1">
   <div class="container">
     <div id="content">    
       <article>
         <header>
-          <h2>Getting Started</h2>
+          <h2>Frequently Asked Questions</h2>
           </header>
 
 <div markdown="1">
