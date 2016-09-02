@@ -838,3 +838,13 @@
 			text-align: center;
 			font-size: 0.9em;
 		}
+
+ul {
+	list-style: inherit;
+	margin-left: 1.2em;
+}
+
+ol {
+	list-style: inherit;
+	margin-left: 1.2em;
+}

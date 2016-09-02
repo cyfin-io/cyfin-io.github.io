@@ -1,9 +1,19 @@
 ---
 title: Getting Started
-layout: page
+layout: default
 ---
+    
+<section class="wrapper style1">
+  <div class="container">
+    <div id="content">    
+      <article>
+        <header>
+          <h2>Getting Started</h2>
+          <p>CLI installation, key management, and registration.</p>
+        </header>
+        <span class="image featured"><img src="{{ site.baseurl }}/assets/images/started.jpg" alt="" /></span>
 
-.
+<div markdown="1">
 
 ```
                  _               _       
@@ -30,9 +40,10 @@ $ cosign-cli
 ```
 
 After installing cosign-cli, continue to:
-- [generate and register a key](#generate-and-register-a-key)
-- purchase a voucher from the [shop](https://holvi.com/shop/ocolin/)
-- [claim the voucher](#claim-a-voucher)
+
+* [generate and register a key](#generate-and-register-a-key)
+* purchase a voucher from the [shop](https://holvi.com/shop/ocolin/)
+* [claim the voucher](#claim-a-voucher)
 
 ## Generate and Register a Key
 
@@ -49,13 +60,13 @@ Install the cosign-cli as described, then run the `generate` command. A secret s
 
 ```
 cosign$ generate
-
-Your mnemonic is:
-
- ***** ***** ******* ***** ******* **** ******* ****** ****** ****** ******* *****
-
-confirm to remove from screen:
 ```
+> Your mnemonic is:
+> 
+>  `***** ***** ******* ***** ******* **** ******* ****** ****** ****** ******* *****`
+> 
+> confirm to remove from screen:
+
 
 Make sure to note the mnemonic. The mnemonic will be removed from the terminal history after you press a key and will be lost after restart of the CLI.
 
@@ -65,9 +76,9 @@ Now that you have generated a key in the previous step, continue to register it 
 
 ```
 cosign$ register your@email.com
-
-Email verification requested. A crypto-fulfillment will be sent to you.
 ```
+> Email verification requested. A crypto-fulfillment will be sent to you.
+
 
 
 You will receive an email similar to this one:
@@ -84,11 +95,11 @@ Note the line starting with **cf:0:**. This is a crypto-fulfillment. Return it t
 
 ```
 cosign$ confirm cf:0:RoFF18igQ7msaEjUKU21zw
-
-cosign-id: 0092a8ff
-balance: 0.0
-email: your@email.com
 ```
+> cosign-id: 0092a8ff
+> <br>balance: 0.0
+> <br>email: your@email.com
+
 
 As you see, your key starts with a 0.0 balance. You can top-up your balance by [claiming a voucher](#claim-a-voucher).
 
@@ -98,9 +109,15 @@ When restarting the CLI, all state is reset. You need to load your key again by 
 
 ```
 cosign$ load
-
-Please enter a mnemonic or hex string to load your key:
-mnemonic/hex: *********************************************
-
-Key loded successfully.
 ```
+> Please enter a mnemonic or hex string to load your key:
+> <br>mnemonic/hex: `******************************************`
+> 
+> Key loded successfully.
+
+
+</div>
+        </article>  
+    </div>
+  </div>
+</section>
