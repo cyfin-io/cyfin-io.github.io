@@ -26,7 +26,7 @@ permalink: /instructions/
 you should get a print like above with the following steps:
 
 ```
-$ npm install cyfin-cli
+$ npm link cyfin-cli
 $ cyfin-cli
 ```
 <br><br>

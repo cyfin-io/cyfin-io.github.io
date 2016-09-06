@@ -14,16 +14,12 @@ permalink: /claiming/
           <article>
 
 <header>
-  <h2>Claiming and Spending Crypto-Conditions</h2>
-  <p>Making the IoT work for me, and paying the bill.</p>
+  <h2>Claiming Crypto-Conditions and Spending Credit</h2>
+  <p>Put the IoT at work and check the bill.</p>
 </header>
 
 <span class="image featured"><img src="{{ site.baseurl }}/assets/images/city.jpg" alt="" /></span>
-<p> Whenever an economic relationship begins, the underlying asset and the rules of exchange have to be defined. CyFin proposes crypto-conditions for this negotiation. Two approaches are possible:
-  <ul>
-    <li>Upon payment, the issuer can create a crypto-condition of a specific value to the paying customer. When the crypto-condition is claimed by the customer the amount stated in the condition is added to his account balance.<br><br></li>
-    <li>The issuer can create an open crypto-condition, claimable by anyone. Open conditions can be put as digital downloads into an online store, or behind a payment wall. The Buyer can complete the condition with his account address and claim the balance.</li>
-  </ul>
+<p> 
 </p>
 
 <h3>An Example of Delivery through Online Store.</h3>
@@ -43,7 +39,7 @@ Cosign.io, an oracle service for identity on the ethereum blockchain offers a pa
     </section>
   </div>
 
-<h3>Claiming a Crypto-Condition</h3>
+<h2>Claiming a Crypto-Condition</h2>
 
 <p>After the purchase, you will receive and email with a crypto-condition, similar to this:</p>
 
@@ -81,7 +77,15 @@ cyfin$ info
 > <br>balance: 20.0
 > <br>email: your@email.com
 
-  </div>
+</div>
+
+<h2>Spending Credit</h2>
+
+<div markdown="1">
+
+CyFin provides a Node.js library to sign crypto-conditions. Check our [documentation](https://github.com/cyfin-io/account-lib/wiki) for details. crypto-conditions are compact strings that can be sumbmitted with the `Authorization` header of HTTP requests.
+
+</div>
 
           </article>  
         </div>
