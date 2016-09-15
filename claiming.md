@@ -67,7 +67,7 @@ Once you are able to display key-pair status information, including the balance,
 ```
 cyfin$ claim cf:37:dDI1NiI6MTAwM...DB9LH
 ```
-> crypto-condition loaded successfully.
+> crypto-condition claimed successfully.
 > <br>new account balance: 20.0
 
 ```
